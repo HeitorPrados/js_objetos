@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function encontrarMaisVelho(pessoas) {
+            var maisVelho = pessoas[0];
+
+            for (var i = 1; i < pessoas.length; i++) {
+                if (pessoas[i].idade > maisVelho.idade) {
+                    maisVelho = pessoas[i];
+                }
+            }
+
+            return maisVelho.nome;
+        }
+
+        // Exemplo de uso:
+        var pessoas = [
+            { nome: 'João', idade: 25 },
+            { nome: 'Maria', idade: 42 },
+            { nome: 'Pedro', idade: 36 }
+        ];
+
+        console.log(encontrarMaisVelho(pessoas)); // Maria
+    </script>
+</body>
+</html>
