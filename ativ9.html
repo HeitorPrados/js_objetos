@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function trueFalse(obj, chave) {
+            return chave in obj
+        }
+
+        const pessoa = {
+            nome: 'heitor',
+            idade: '16',
+            email: 'heitorpradowow@gmail.com',
+            endereco: 'rua do carecas',
+        }
+
+        console.log(trueFalse(pessoa,'nome'))
+        console.log(trueFalse(pessoa,'casa'))
+    </script>
+</body>
+</html>
